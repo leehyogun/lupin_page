@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rush Guru | Home</title>
+  <meta name="description" content="Rush Guru 공식 소개 페이지" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: Inter, system-ui, sans-serif; }
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-white">
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-500 to-cyan-400 font-extrabold text-slate-950">RG</div>
+        <div>
+          <p class="font-semibold">Rush Guru</p>
+          <p class="text-xs text-slate-400">Telegram Social Casino</p>
+        </div>
+      </a>
+      <nav class="hidden gap-6 md:flex">
+        <a href="features.html" class="text-slate-300 hover:text-white">Features</a>
+        <a href="how-to-play.html" class="text-slate-300 hover:text-white">How to Play</a>
+        <a href="faq.html" class="text-slate-300 hover:text-white">FAQ</a>
+        <a href="privacy.html" class="text-slate-300 hover:text-white">Privacy</a>
+        <a href="terms.html" class="text-slate-300 hover:text-white">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 lg:grid-cols-2">
+    <div>
+      <div class="inline-flex rounded-full border border-fuchsia-400/30 bg-fuchsia-400/10 px-4 py-2 text-sm text-fuchsia-200">Telegram Mini App Ready</div>
+      <h1 class="mt-6 text-5xl font-extrabold leading-tight">Play → Laugh → Enjoy → Earn</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+        Rush Guru는 Telegram 안에서 바로 즐길 수 있는 소셜 카지노 게임입니다.<br />
+        탭으로 시작하고, 플레이로 몰입하고, 포인트와 시즌 보상으로 계속 참여하게 만드는 구조를 지향합니다.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="https://t.me/RushGuru_bot" target="_blank" rel="noopener noreferrer"
+           class="rounded-full bg-white px-6 py-3 font-bold text-slate-950">Play on Telegram</a>
+        <a href="features.html"
+           class="rounded-full border border-white/15 px-6 py-3 font-semibold text-white">기능 보기</a>
+      </div>
+    </div>
+
+    <div class="glass rounded-[32px] p-5">
+      <img
+        src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80"
+        alt="Rush Guru preview"
+        class="h-[520px] w-full rounded-[24px] object-cover"
+      />
+    </div>
+  </main>
+
+  <section class="mx-auto max-w-7xl px-6 pb-20">
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-xl font-bold">🎯 Tap</h3>
+        <p class="mt-3 text-sm leading-7 text-slate-300">탭과 채굴 기반의 쉬운 진입</p>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-xl font-bold">🎰 Play</h3>
+        <p class="mt-3 text-sm leading-7 text-slate-300">슬롯, 바카라, 이벤트 등 다양한 콘텐츠</p>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-xl font-bold">💎 Earn</h3>
+        <p class="mt-3 text-sm leading-7 text-slate-300">Guru Points와 시즌 보상 중심 반복 참여</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-400 md:flex-row md:justify-between">
+      <p>© 2026 Wildcard Games. All rights reserved.</p>
+      <div class="flex gap-5">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
