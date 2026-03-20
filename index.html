@@ -349,38 +349,67 @@
   <div class="gold-divider"></div>
 
   <!-- ── HOW TO START ── -->
-  <section class="py-24 px-6 lg:px-12" style="background: #08080f;">
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Get Started</p>
-      <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-14">3단계로 시작하기</h2>
+  <section class="py-24 px-6 lg:px-12 overflow-hidden" style="background: #08080f;">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
 
-      <div class="grid gap-6 sm:grid-cols-3">
-        <div class="relative">
-          <div class="text-6xl font-black gold-text opacity-20 leading-none mb-4">01</div>
-          <div class="text-3xl mb-3">🔍</div>
-          <h3 class="font-bold mb-2">Bot 검색</h3>
-          <p class="text-sm text-[#6a6a82]">Telegram에서 <span class="text-yellow-500 font-semibold">@LupinSpinDevBot</span>을 검색하거나 링크를 클릭하세요.</p>
+      <!-- Cat character: dealer/host -->
+      <div class="relative flex-shrink-0 flex flex-col items-center">
+        <!-- Spotlight glow behind cat -->
+        <div class="absolute inset-0 flex items-end justify-center pointer-events-none">
+          <div class="w-48 h-32 rounded-full opacity-30"
+            style="background: radial-gradient(ellipse, rgba(240,165,0,0.7) 0%, transparent 70%); filter: blur(20px);"></div>
         </div>
-        <div class="relative">
-          <div class="text-6xl font-black gold-text opacity-20 leading-none mb-4">02</div>
-          <div class="text-3xl mb-3">▶️</div>
-          <h3 class="font-bold mb-2">Play 버튼</h3>
-          <p class="text-sm text-[#6a6a82]">채팅창 하단의 Play 버튼을 눌러 Mini App을 실행하세요.</p>
-        </div>
-        <div class="relative">
-          <div class="text-6xl font-black gold-text opacity-20 leading-none mb-4">03</div>
-          <div class="text-3xl mb-3">🪙</div>
-          <h3 class="font-bold mb-2">포인트 획득</h3>
-          <p class="text-sm text-[#6a6a82]">탭하고, 스핀하고, 친구를 초대해 Lupin Points를 모으세요.</p>
+        <img src="assets/cats_image.webp" alt="Lupin Spin Dealer"
+          class="relative w-52 sm:w-64 lg:w-72"
+          style="filter: drop-shadow(0 8px 32px rgba(240,165,0,0.35)) drop-shadow(0 2px 8px rgba(0,0,0,0.6)); animation: bounce-slow 4s ease-in-out infinite;">
+        <!-- Speech bubble -->
+        <div class="relative mt-2 rounded-2xl border border-yellow-700/30 bg-yellow-900/15 px-5 py-3 text-center"
+          style="backdrop-filter: blur(8px);">
+          <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-0 h-0"
+            style="border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 10px solid rgba(120,80,0,0.3);"></div>
+          <p class="text-sm font-bold text-yellow-400">지금 시작해볼까요? 🎩</p>
         </div>
       </div>
 
-      <div class="mt-12">
-        <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer"
-          class="btn-primary glow-btn inline-flex items-center gap-2.5 rounded-2xl px-10 py-4 text-lg font-black text-black">
-          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-          지금 바로 시작하기
-        </a>
+      <!-- Steps -->
+      <div class="flex-1 w-full">
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Get Started</p>
+        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-10">3단계로 시작하기</h2>
+
+        <div class="space-y-6">
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-2xl font-black text-black text-lg"
+              style="background: linear-gradient(135deg, #f5c842, #f09010);">01</div>
+            <div>
+              <h3 class="font-bold mb-1">Bot 검색</h3>
+              <p class="text-sm text-[#6a6a82] leading-6">Telegram에서 <span class="text-yellow-500 font-semibold">@LupinSpinDevBot</span>을 검색하거나 링크를 클릭하세요.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-2xl font-black text-black text-lg"
+              style="background: linear-gradient(135deg, #f5c842, #f09010);">02</div>
+            <div>
+              <h3 class="font-bold mb-1">Play 버튼</h3>
+              <p class="text-sm text-[#6a6a82] leading-6">채팅창 하단의 Play 버튼을 눌러 Mini App을 실행하세요.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-2xl font-black text-black text-lg"
+              style="background: linear-gradient(135deg, #f5c842, #f09010);">03</div>
+            <div>
+              <h3 class="font-bold mb-1">포인트 획득</h3>
+              <p class="text-sm text-[#6a6a82] leading-6">탭하고, 스핀하고, 친구를 초대해 Lupin Points를 모으세요.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer"
+            class="btn-primary glow-btn inline-flex items-center gap-2.5 rounded-2xl px-8 py-4 text-base font-black text-black">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            지금 바로 시작하기
+          </a>
+        </div>
       </div>
     </div>
   </section>
