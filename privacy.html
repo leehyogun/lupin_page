@@ -3,67 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rush Guru | Privacy Policy</title>
+  <title>Rush Guru Docs | Privacy Policy</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { font-family: Inter, system-ui, sans-serif; }
+    .sidebar::-webkit-scrollbar { width: 4px; }
+    .sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+    .nav-active { background: rgba(232,121,249,0.08); color: #e879f9; font-weight: 500; }
+    .nav-item { color: #94a3b8; }
+    .nav-item:hover { background: rgba(255,255,255,0.05); color: #e2e8f0; }
+    .prose h2 { font-size: 1.125rem; font-weight: 600; color: #f1f5f9; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .prose p { color: #94a3b8; line-height: 1.75; font-size: 0.9375rem; margin-bottom: 0.75rem; }
   </style>
 </head>
 <body class="bg-slate-950 text-white">
 
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-500 to-cyan-400 font-extrabold text-slate-950">RG</div>
-        <div>
-          <p class="font-semibold">Rush Guru</p>
-          <p class="text-xs text-slate-400">Telegram Social Casino</p>
-        </div>
-      </a>
-      <nav class="hidden gap-6 md:flex">
-        <a href="features.html" class="text-slate-300 hover:text-white">Features</a>
-        <a href="how-to-play.html" class="text-slate-300 hover:text-white">How to Play</a>
-        <a href="faq.html" class="text-slate-300 hover:text-white">FAQ</a>
-        <a href="privacy.html" class="text-white">Privacy</a>
-        <a href="terms.html" class="text-slate-300 hover:text-white">Terms</a>
-      </nav>
-    </div>
-  </header>
+  <div class="sticky top-0 z-40 flex items-center gap-3 border-b border-white/10 bg-slate-950/90 px-4 py-3 backdrop-blur md:hidden">
+    <button onclick="document.getElementById('sidebar').classList.toggle('-translate-x-full');document.getElementById('overlay').classList.toggle('hidden')" class="rounded-md p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white">
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <span class="text-sm font-semibold">Rush Guru Docs</span>
+  </div>
 
-  <main class="mx-auto max-w-4xl px-6 py-16">
-    <a href="index.html" class="text-sm text-cyan-300">← 홈으로</a>
-    <h1 class="mt-4 text-4xl font-extrabold">Privacy Policy</h1>
+  <div id="overlay" class="fixed inset-0 z-30 hidden bg-black/60 md:hidden" onclick="document.getElementById('sidebar').classList.add('-translate-x-full');this.classList.add('hidden')"></div>
 
-    <div class="mt-10 rounded-3xl border border-white/10 bg-slate-900 p-8 text-sm leading-8 text-slate-300">
-      <p>여기에 개인정보처리방침 본문을 넣으세요.</p>
-      <p class="mt-4">예: 수집 항목, 보관 기간, 문의처, 제3자 제공 여부 등.</p>
-
-      <h2 class="mt-8 text-lg font-bold text-white">1. 수집하는 개인정보</h2>
-      <p class="mt-2">Rush Guru는 서비스 제공을 위해 Telegram 계정 정보(닉네임, ID)를 수집합니다.</p>
-
-      <h2 class="mt-8 text-lg font-bold text-white">2. 이용 목적</h2>
-      <p class="mt-2">수집된 정보는 게임 서비스 제공, 보상 지급, 고객 지원에만 활용됩니다.</p>
-
-      <h2 class="mt-8 text-lg font-bold text-white">3. 보관 기간</h2>
-      <p class="mt-2">서비스 탈퇴 후 30일 이내 파기합니다.</p>
-
-      <h2 class="mt-8 text-lg font-bold text-white">4. 제3자 제공</h2>
-      <p class="mt-2">법령에 따른 경우를 제외하고 제3자에게 개인정보를 제공하지 않습니다.</p>
-
-      <h2 class="mt-8 text-lg font-bold text-white">5. 문의</h2>
-      <p class="mt-2">개인정보 관련 문의는 Telegram을 통해 접수해 주세요.</p>
-    </div>
-  </main>
-
-  <footer class="border-t border-white/10">
-    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-400 md:flex-row md:justify-between">
-      <p>© 2026 Wildcard Games. All rights reserved.</p>
-      <div class="flex gap-5">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+  <aside id="sidebar" class="sidebar fixed left-0 top-0 z-40 flex h-screen w-64 -translate-x-full flex-col overflow-y-auto border-r border-white/10 bg-[#111318] transition-transform duration-200 md:translate-x-0">
+    <div class="flex items-center gap-3 border-b border-white/10 px-4 py-4">
+      <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-cyan-400 text-sm font-extrabold text-slate-950">RG</div>
+      <div>
+        <p class="text-sm font-semibold">Rush Guru</p>
+        <p class="text-xs text-slate-500">Documentation</p>
       </div>
     </div>
-  </footer>
+
+    <div class="px-3 pt-3 pb-2">
+      <div class="flex w-full items-center gap-2 rounded-md bg-white/5 px-3 py-2 text-sm text-slate-500 ring-1 ring-white/10">
+        <svg class="h-3.5 w-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-5.197-5.197A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+        <span class="flex-1 text-xs">검색...</span>
+        <kbd class="rounded bg-white/10 px-1.5 py-0.5 text-xs">⌘K</kbd>
+      </div>
+    </div>
+
+    <nav class="flex-1 px-3 py-2 space-y-0.5 text-sm">
+      <p class="px-3 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Overview</p>
+      <a href="index.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
+        <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+        Welcome
+      </a>
+
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Getting Started</p>
+      <a href="features.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
+        <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+        Features
+      </a>
+      <a href="how-to-play.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
+        <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"/></svg>
+        How to Play
+      </a>
+
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Support</p>
+      <a href="faq.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
+        <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+        FAQ
+      </a>
+
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Legal</p>
+      <a href="privacy.html" class="nav-active flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
+        <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+        Privacy Policy
+      </a>
+      <a href="terms.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
+        <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
+        Terms of Service
+      </a>
+    </nav>
+
+    <div class="border-t border-white/10 p-4">
+      <a href="https://t.me/RushGuru_bot" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs text-slate-500 hover:text-fuchsia-300 transition-colors">
+        <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/></svg>
+        Play on Telegram
+      </a>
+    </div>
+  </aside>
+
+  <div class="md:ml-64">
+    <main class="mx-auto max-w-3xl px-6 py-12 lg:px-10">
+
+      <nav class="mb-8 flex items-center gap-1.5 text-xs text-slate-600">
+        <a href="index.html" class="hover:text-slate-400 transition-colors">Rush Guru Docs</a>
+        <span>/</span>
+        <span class="text-slate-600">Legal</span>
+        <span>/</span>
+        <span class="text-slate-400">Privacy Policy</span>
+      </nav>
+
+      <h1 class="text-4xl font-extrabold tracking-tight">Privacy Policy</h1>
+      <p class="mt-3 text-xs text-slate-600">Last updated: March 2026</p>
+
+      <div class="prose mt-8">
+
+        <h2>1. 수집하는 개인정보</h2>
+        <p>Rush Guru는 서비스 제공을 위해 Telegram 계정 정보(닉네임, ID)를 수집합니다. 별도의 가입 절차 없이 Telegram 계정으로 자동 연동됩니다.</p>
+
+        <h2>2. 이용 목적</h2>
+        <p>수집된 정보는 게임 서비스 제공, 보상 지급, 고객 지원에만 활용됩니다. 마케팅 목적으로 활용되지 않습니다.</p>
+
+        <h2>3. 보관 기간</h2>
+        <p>서비스 이용 기간 동안 보관되며, 탈퇴 요청 후 30일 이내에 파기됩니다. 법령에 의해 보존이 필요한 경우 해당 기간 동안 별도 보관합니다.</p>
+
+        <h2>4. 제3자 제공</h2>
+        <p>법령에 따른 경우를 제외하고 제3자에게 개인정보를 제공하지 않습니다. Telegram 플랫폼의 개인정보처리방침이 별도로 적용됩니다.</p>
+
+        <h2>5. 문의</h2>
+        <p>개인정보 관련 문의는 Telegram을 통해 접수해 주세요. 최대 7영업일 이내에 답변드립니다.</p>
+      </div>
+
+      <div class="mt-14 flex items-center justify-between border-t border-white/10 pt-8 text-sm">
+        <a href="faq.html" class="group flex flex-col gap-0.5">
+          <span class="text-xs text-slate-600 group-hover:text-slate-400 transition-colors">← Previous</span>
+          <span class="font-semibold text-slate-300 group-hover:text-white transition-colors">FAQ</span>
+        </a>
+        <a href="terms.html" class="group flex flex-col items-end gap-0.5">
+          <span class="text-xs text-slate-600 group-hover:text-slate-400 transition-colors">Next →</span>
+          <span class="font-semibold text-slate-300 group-hover:text-white transition-colors">Terms of Service</span>
+        </a>
+      </div>
+    </main>
+
+    <footer class="border-t border-white/10 px-6 py-5 lg:px-10">
+      <div class="mx-auto max-w-3xl flex items-center justify-between text-xs text-slate-600">
+        <span>© 2026 Wildcard Games. All rights reserved.</span>
+        <span>Rush Guru Docs</span>
+      </div>
+    </footer>
+  </div>
 
 </body>
 </html>
