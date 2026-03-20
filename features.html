@@ -4,19 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lupin Spin Docs | Features</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { font-family: Inter, system-ui, sans-serif; }
+    h1 { font-family: 'Cormorant Garamond', Georgia, serif; letter-spacing: -0.02em; font-weight: 600; }
     .sidebar::-webkit-scrollbar { width: 4px; }
-    .sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
-    .nav-active { background: rgba(232,121,249,0.08); color: #e879f9; font-weight: 500; }
-    .nav-item { color: #94a3b8; }
-    .nav-item:hover { background: rgba(255,255,255,0.05); color: #e2e8f0; }
+    .sidebar::-webkit-scrollbar-thumb { background: rgba(201,169,110,0.15); border-radius: 2px; }
+    .nav-active { background: rgba(201,169,110,0.07); color: #c9a96e; font-weight: 500; }
+    .nav-item { color: #5e5a55; }
+    .nav-item:hover { background: rgba(255,255,255,0.03); color: #9c9080; }
   </style>
 </head>
-<body class="bg-slate-950 text-white">
+<body class="bg-[#0a0908] text-white">
 
-  <div class="sticky top-0 z-40 flex items-center gap-3 border-b border-white/10 bg-slate-950/90 px-4 py-3 backdrop-blur md:hidden">
+  <div class="sticky top-0 z-40 flex items-center gap-3 border-b border-white/10 bg-[#0a0908]/90 px-4 py-3 backdrop-blur md:hidden">
     <button onclick="document.getElementById('sidebar').classList.toggle('-translate-x-full');document.getElementById('overlay').classList.toggle('hidden')" class="rounded-md p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white">
       <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
@@ -25,9 +28,9 @@
 
   <div id="overlay" class="fixed inset-0 z-30 hidden bg-black/60 md:hidden" onclick="document.getElementById('sidebar').classList.add('-translate-x-full');this.classList.add('hidden')"></div>
 
-  <aside id="sidebar" class="sidebar fixed left-0 top-0 z-40 flex h-screen w-64 -translate-x-full flex-col overflow-y-auto border-r border-white/10 bg-[#111318] transition-transform duration-200 md:translate-x-0">
+  <aside id="sidebar" class="sidebar fixed left-0 top-0 z-40 flex h-screen w-64 -translate-x-full flex-col overflow-y-auto border-r border-white/10 bg-[#0e0d0c] transition-transform duration-200 md:translate-x-0">
     <div class="flex items-center gap-3 border-b border-white/10 px-4 py-4">
-      <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-cyan-400 text-sm font-extrabold text-slate-950">LS</div>
+      <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl border border-amber-700/30 bg-[#1a1710] text-sm font-bold text-amber-500">LS</div>
       <div>
         <p class="text-sm font-semibold">Lupin Spin</p>
         <p class="text-xs text-slate-500">Documentation</p>
@@ -35,7 +38,7 @@
     </div>
 
     <div class="px-3 pt-3 pb-2">
-      <div class="flex w-full items-center gap-2 rounded-md bg-white/5 px-3 py-2 text-sm text-slate-500 ring-1 ring-white/10">
+      <div class="flex w-full items-center gap-2 rounded-md bg-white/5 px-3 py-2 text-sm text-slate-500 ring-1 ring-white/5">
         <svg class="h-3.5 w-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-5.197-5.197A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
         <span class="flex-1 text-xs">검색...</span>
         <kbd class="rounded bg-white/10 px-1.5 py-0.5 text-xs">⌘K</kbd>
@@ -43,13 +46,13 @@
     </div>
 
     <nav class="flex-1 px-3 py-2 space-y-0.5 text-sm">
-      <p class="px-3 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Overview</p>
+      <p class="px-3 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Overview</p>
       <a href="index.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
         Welcome
       </a>
 
-      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Getting Started</p>
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Getting Started</p>
       <a href="features.html" class="nav-active flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
         Features
@@ -59,13 +62,13 @@
         How to Play
       </a>
 
-      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Support</p>
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Support</p>
       <a href="faq.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
         FAQ
       </a>
 
-      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-slate-600">Legal</p>
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Legal</p>
       <a href="privacy.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
         Privacy Policy
@@ -77,7 +80,7 @@
     </nav>
 
     <div class="border-t border-white/10 p-4">
-      <a href="https://t.me/RushGuru_bot" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs text-slate-500 hover:text-fuchsia-300 transition-colors">
+      <a href="https://t.me/RushGuru_bot" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs text-slate-500 hover:text-amber-500 transition-colors">
         <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/></svg>
         Play on Telegram
       </a>
@@ -95,14 +98,14 @@
         <span class="text-slate-400">Features</span>
       </nav>
 
-      <h1 class="text-4xl font-extrabold tracking-tight">Features</h1>
-      <p class="mt-4 text-lg text-slate-400 leading-7">Lupin Spin의 핵심 기능과 게임 요소를 소개합니다.</p>
+      <h1 class="text-[2.75rem] font-semibold tracking-tight">Features</h1>
+      <p class="mt-4 text-lg text-[#6b6258] leading-7">Lupin Spin의 핵심 기능과 게임 요소를 소개합니다.</p>
 
       <div class="mt-10 space-y-4">
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-fuchsia-500/10 text-fuchsia-300 text-sm font-bold">01</div>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-medium">01</div>
             <div>
               <h2 class="font-semibold text-white">Telegram에서 실행</h2>
               <p class="mt-2 text-sm leading-7 text-slate-400">Play 버튼 하나로 Telegram Mini App에 바로 진입합니다. 별도 설치 없이 즉시 플레이 가능합니다.</p>
@@ -112,7 +115,7 @@
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-cyan-500/10 text-cyan-300 text-sm font-bold">02</div>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-stone-600/10 text-stone-400 text-sm font-medium">02</div>
             <div>
               <h2 class="font-semibold text-white">Tap &amp; Mine</h2>
               <p class="mt-2 text-sm leading-7 text-slate-400">탭 채굴 메커닉으로 기본 재화를 모으며 플레이 루프에 적응합니다. 가장 쉬운 진입 방식입니다.</p>
@@ -122,7 +125,7 @@
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-fuchsia-500/10 text-fuchsia-300 text-sm font-bold">03</div>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-medium">03</div>
             <div>
               <h2 class="font-semibold text-white">Casino 콘텐츠</h2>
               <p class="mt-2 text-sm leading-7 text-slate-400">슬롯, 바카라, 이벤트 콘텐츠에 참여하세요. 다양한 게임 모드가 순환되며 지속적인 즐거움을 제공합니다.</p>
@@ -132,7 +135,7 @@
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-cyan-500/10 text-cyan-300 text-sm font-bold">04</div>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-stone-600/10 text-stone-400 text-sm font-medium">04</div>
             <div>
               <h2 class="font-semibold text-white">포인트 &amp; 소셜 확장</h2>
               <p class="mt-2 text-sm leading-7 text-slate-400">Guru Points 적립, 친구 초대, 시즌 미션으로 지속적인 참여를 유도합니다. 리더보드로 커뮤니티와 경쟁하세요.</p>
@@ -142,7 +145,7 @@
       </div>
 
       <!-- Info callout -->
-      <div class="mt-8 rounded-lg border border-cyan-400/20 bg-cyan-400/5 px-4 py-3.5 text-sm text-cyan-200">
+      <div class="mt-8 rounded-lg border border-stone-600/20 bg-stone-600/5 px-4 py-3.5 text-sm text-stone-400">
         <span class="font-semibold">참고:</span> 모든 기능은 Telegram 계정만 있으면 바로 사용 가능하며, 기본 플레이는 무료입니다.
       </div>
 
