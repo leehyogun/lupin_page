@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lupin Spin Docs | FAQ</title>
+  <title>FAQ — Lupin Spin Docs</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -19,6 +20,7 @@
     details summary::-webkit-details-marker { display: none; }
     details[open] .chevron { transform: rotate(90deg); }
     .chevron { transition: transform 0.2s; }
+    .gold { color: #d4a84b; }
   </style>
 </head>
 <body class="bg-[#0a0908] text-white">
@@ -34,23 +36,15 @@
 
   <aside id="sidebar" class="sidebar fixed left-0 top-0 z-40 flex h-screen w-64 -translate-x-full flex-col overflow-y-auto border-r border-white/10 bg-[#0e0d0c] transition-transform duration-200 md:translate-x-0">
     <div class="flex items-center gap-3 border-b border-white/10 px-4 py-4">
-      <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl border border-amber-700/30 bg-[#1a1710] text-sm font-bold text-amber-500">LS</div>
+      <img src="assets/icon.webp" alt="Lupin Spin" class="h-9 w-9 rounded-xl object-cover" style="filter: drop-shadow(0 0 6px rgba(240,165,0,0.4));">
       <div>
         <p class="text-sm font-semibold">Lupin Spin</p>
         <p class="text-xs text-slate-500">Documentation</p>
       </div>
     </div>
 
-    <div class="px-3 pt-3 pb-2">
-      <div class="flex w-full items-center gap-2 rounded-md bg-white/5 px-3 py-2 text-sm text-slate-500 ring-1 ring-white/5">
-        <svg class="h-3.5 w-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-5.197-5.197A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
-        <span class="flex-1 text-xs">검색...</span>
-        <kbd class="rounded bg-white/10 px-1.5 py-0.5 text-xs">⌘K</kbd>
-      </div>
-    </div>
-
-    <nav class="flex-1 px-3 py-2 space-y-0.5 text-sm">
-      <p class="px-3 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Overview</p>
+    <nav class="flex-1 px-3 py-4 space-y-0.5 text-sm">
+      <p class="px-3 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Overview</p>
       <a href="index.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
         Welcome
@@ -103,9 +97,22 @@
       </nav>
 
       <h1 class="text-[2.75rem] font-semibold tracking-tight">자주 묻는 질문</h1>
-      <p class="mt-4 text-lg text-[#6b6258] leading-7">Lupin Spin 이용 중 궁금한 점을 정리했습니다.</p>
+      <p class="mt-4 text-lg text-[#6b6258] leading-7">Lupin Spin과 LP 경제에 대해 자주 묻는 질문들을 정리했습니다.</p>
 
-      <div class="mt-10 space-y-2">
+      <!-- About the game -->
+      <h2 class="mt-12 mb-4 text-xs font-bold uppercase tracking-widest text-amber-600">게임에 대해</h2>
+      <div class="space-y-2">
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            Lupin Spin은 도박 게임인가요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            아닙니다. Lupin Spin은 슬롯을 코어 루프로 활용하는 <span class="gold font-semibold">Slot RPG</span>입니다.
+            실제 현금 베팅이 없고, 게임 내 진행과 성장(트레저 카드 업그레이드, 레이드, LP 축적)이 목적입니다.
+          </div>
+        </details>
 
         <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
           <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
@@ -113,27 +120,7 @@
             <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
           </summary>
           <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
-            Telegram Mini App에서 플레이합니다. <a href="https://t.me/LupinSpinDevBot" target="_blank" class="text-amber-600 hover:text-amber-500 underline underline-offset-2">@LupinSpinDevBot</a>을 Telegram에서 열고 Play 버튼을 누르면 됩니다.
-          </div>
-        </details>
-
-        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
-          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
-            이 사이트는 무슨 용도인가요?
-            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
-          </summary>
-          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
-            게임 소개, 가이드, FAQ, 정책 안내를 위한 공식 포털입니다. 실제 게임은 Telegram Mini App에서 진행됩니다.
-          </div>
-        </details>
-
-        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
-          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
-            Guru Points는 어떻게 쌓나요?
-            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
-          </summary>
-          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
-            게임 플레이, 친구 초대, 시즌 미션 완료를 통해 Guru Points를 획득할 수 있습니다. 시즌이 끝나면 포인트 순위에 따라 보상이 지급됩니다.
+            Telegram Mini App에서 플레이합니다. <a href="https://t.me/LupinSpinDevBot" target="_blank" class="text-amber-500 hover:text-amber-400 underline underline-offset-2">@LupinSpinDevBot</a>을 Telegram에서 열고 Play 버튼을 누르면 바로 시작됩니다. 별도 앱 설치가 필요하지 않습니다.
           </div>
         </details>
 
@@ -143,17 +130,128 @@
             <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
           </summary>
           <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
-            네, 기본 기능은 무료로 이용 가능합니다. Telegram 계정만 있으면 즉시 시작할 수 있습니다.
+            네, 기본 플레이는 무료입니다. Telegram 계정만 있으면 즉시 시작할 수 있습니다.
           </div>
         </details>
 
         <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
           <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
-            업데이트 공지도 확인할 수 있나요?
+            에너지는 어떻게 회복되나요?
             <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
           </summary>
           <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
-            업데이트 및 공지사항은 Telegram 채널을 통해 안내됩니다. 문서 사이트에서도 중요 업데이트를 안내할 예정입니다.
+            시간이 지나면 에너지가 자동으로 회복됩니다. 친구 초대나 시즌 이벤트로 추가 에너지를 받을 수도 있습니다.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            트레저 카드는 어떻게 얻나요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            스핀으로 얻은 골드로 스테이지별 트레저 카드를 구매하고 업그레이드합니다.
+            활성화된 카드는 시간당 토큰을 자동으로 생산합니다. 같은 스테이지의 3종 카드를 모두 활성화하면 시너지가 발생합니다.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            관리인 노아(NOA)는 누구인가요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            행운의 신을 대리하는 고양이로, 트레저 카드 관리자 역할을 합니다.
+            만사가 귀찮은 귀차니스트지만 보물의 부의 기운을 정제해 토큰으로 만들어주는 핵심 조력자입니다.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- About LP -->
+      <h2 class="mt-12 mb-4 text-xs font-bold uppercase tracking-widest text-amber-600">LP &amp; 생태계</h2>
+      <div class="space-y-2">
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            LP는 무엇인가요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            <span class="gold font-semibold">LP (Lupin Points)</span>는 단순 포인트가 아닌 복합적 성격의 자산입니다 — ①게임 내 화폐, ②크로스 게임 자산, ③교환 가능한 가치, ④DreamDo의 성장을 유저와 함께 나누는 수단.
+            모든 플레이(스핀·레이드·카드)가 LP로 쌓입니다.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            LP는 언제 티켓·리워드로 전환되나요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            로드맵의 특정 시점에 <span class="gold font-semibold">Lupin Hub</span>를 통해 교환이 가능해질 예정입니다.
+            구체적 시점은 추후 공지합니다.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            다른 DreamDo 게임에서도 LP를 사용할 수 있나요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            네, Lupin Hub 출시 이후 가능합니다.
+            하나의 LP로 Lupin Casino, Lupin Quest 등 향후 출시될 DreamDo 게임에서 사용할 수 있게 됩니다.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            DreamDo는 어떤 회사인가요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            DreamDo는 Telegram 미니앱 기반 게임 퍼블리셔입니다.
+            "Grow together. Play together." — 플레이어가 게임의 성장에 함께 참여하고, 그 성장을 함께 나누는 경험을 만듭니다.
+            Lupin Spin은 첫 시리즈(Lupin Series)의 첫 작품입니다.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            Lupin Hub는 언제 출시되나요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            Lupin Spin 베타 이후 NEXT 단계로 준비 중입니다.
+            구체적 시점은 추후 공지하며, 업데이트는 Telegram 채널을 통해 안내됩니다.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Misc -->
+      <h2 class="mt-12 mb-4 text-xs font-bold uppercase tracking-widest text-amber-600">기타</h2>
+      <div class="space-y-2">
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            이 사이트는 무슨 용도인가요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            Lupin Spin의 공식 소개 및 문서 사이트입니다. 게임 소개, 플레이 가이드, FAQ, 정책을 안내합니다.
+            실제 게임은 Telegram Mini App에서 진행됩니다.
+          </div>
+        </details>
+
+        <details class="group rounded-xl border border-white/10 bg-white/[0.03] hover:border-white/20 transition-colors">
+          <summary class="flex items-center justify-between gap-4 px-5 py-4 text-sm font-medium text-slate-200">
+            업데이트 공지는 어디서 보나요?
+            <svg class="chevron h-4 w-4 flex-shrink-0 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 18 6-6-6-6"/></svg>
+          </summary>
+          <div class="border-t border-white/10 px-5 py-4 text-sm leading-7 text-slate-400">
+            업데이트 및 공지사항은 Telegram 채널을 통해 안내됩니다. 이 문서 사이트에서도 주요 업데이트를 반영합니다.
           </div>
         </details>
 
@@ -173,8 +271,8 @@
 
     <footer class="border-t border-white/10 px-6 py-5 lg:px-10">
       <div class="mx-auto max-w-3xl flex items-center justify-between text-xs text-slate-600">
-        <span>© 2026 Lupin Spin</span>
-        <span>Lupin Spin Docs</span>
+        <span>© 2026 DreamDo</span>
+        <span>Grow together. Play together.</span>
       </div>
     </footer>
   </div>

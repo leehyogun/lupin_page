@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lupin Spin Docs | Features</title>
+  <title>Features — Lupin Spin Docs</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,6 +16,7 @@
     .nav-active { background: rgba(201,169,110,0.07); color: #c9a96e; font-weight: 500; }
     .nav-item { color: #5e5a55; }
     .nav-item:hover { background: rgba(255,255,255,0.03); color: #9c9080; }
+    .gold { color: #d4a84b; }
   </style>
 </head>
 <body class="bg-[#0a0908] text-white">
@@ -30,23 +32,15 @@
 
   <aside id="sidebar" class="sidebar fixed left-0 top-0 z-40 flex h-screen w-64 -translate-x-full flex-col overflow-y-auto border-r border-white/10 bg-[#0e0d0c] transition-transform duration-200 md:translate-x-0">
     <div class="flex items-center gap-3 border-b border-white/10 px-4 py-4">
-      <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl border border-amber-700/30 bg-[#1a1710] text-sm font-bold text-amber-500">LS</div>
+      <img src="assets/icon.webp" alt="Lupin Spin" class="h-9 w-9 rounded-xl object-cover" style="filter: drop-shadow(0 0 6px rgba(240,165,0,0.4));">
       <div>
         <p class="text-sm font-semibold">Lupin Spin</p>
         <p class="text-xs text-slate-500">Documentation</p>
       </div>
     </div>
 
-    <div class="px-3 pt-3 pb-2">
-      <div class="flex w-full items-center gap-2 rounded-md bg-white/5 px-3 py-2 text-sm text-slate-500 ring-1 ring-white/5">
-        <svg class="h-3.5 w-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-5.197-5.197A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
-        <span class="flex-1 text-xs">검색...</span>
-        <kbd class="rounded bg-white/10 px-1.5 py-0.5 text-xs">⌘K</kbd>
-      </div>
-    </div>
-
-    <nav class="flex-1 px-3 py-2 space-y-0.5 text-sm">
-      <p class="px-3 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Overview</p>
+    <nav class="flex-1 px-3 py-4 space-y-0.5 text-sm">
+      <p class="px-3 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Overview</p>
       <a href="index.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
         Welcome
@@ -99,54 +93,142 @@
       </nav>
 
       <h1 class="text-[2.75rem] font-semibold tracking-tight">Features</h1>
-      <p class="mt-4 text-lg text-[#6b6258] leading-7">Lupin Spin의 핵심 기능과 게임 요소를 소개합니다.</p>
+      <p class="mt-4 text-lg text-[#6b6258] leading-7">
+        Lupin Spin은 Telegram 위에서 돌아가는 <span class="gold">Slot RPG</span>입니다.
+        슬롯은 코어 루프 엔진, 그 위에 트레저 카드 · 레이드 · LP 경제 레이어가 얹혀있습니다.
+      </p>
 
-      <div class="mt-10 space-y-4">
+      <!-- Core Loop -->
+      <section class="mt-12">
+        <h2 class="text-xl font-semibold tracking-tight mb-5">Core Loop</h2>
+        <p class="text-sm leading-7 text-slate-400 mb-5">
+          에너지로 스핀을 돌려 골드와 심볼을 모으고, 트레저 카드를 키워 LP를 얻는 흐름이 기본 루프입니다.
+        </p>
+
+        <div class="rounded-xl border border-white/10 bg-white/[0.03] p-5 text-sm leading-7 text-slate-300 font-mono">
+          에너지 → <span class="gold">Spin</span> → Win (Gold / Symbol / Card / Quest)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;→ <span class="gold">Raid</span> (attack · defend · raid)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;→ Gold → <span class="gold">Treasure Card</span> (구매 · 업그레이드)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;→ <span class="gold">LP</span> (Lupin Points)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;→ [Future] Hub에서 타 게임 사용 · 리워드 교환
+        </div>
+      </section>
+
+      <!-- Features list -->
+      <div class="mt-12 space-y-4">
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-medium">01</div>
-            <div>
-              <h2 class="font-semibold text-white">Telegram에서 실행</h2>
-              <p class="mt-2 text-sm leading-7 text-slate-400">Play 버튼 하나로 Telegram Mini App에 바로 진입합니다. 별도 설치 없이 즉시 플레이 가능합니다.</p>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-semibold">01</div>
+            <div class="flex-1">
+              <h2 class="font-semibold text-white">Slot — 모든 것의 시작</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-400">
+                에너지를 태워 슬롯을 돌리면 골드, 심볼, 카드, 퀘스트가 나옵니다.
+                특정 심볼을 모으면 보너스 골드가, 조합에 따라 레이드·방어 기회가 발생합니다.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-stone-600/10 text-stone-400 text-sm font-medium">02</div>
-            <div>
-              <h2 class="font-semibold text-white">Tap &amp; Mine</h2>
-              <p class="mt-2 text-sm leading-7 text-slate-400">탭 채굴 메커닉으로 기본 재화를 모으며 플레이 루프에 적응합니다. 가장 쉬운 진입 방식입니다.</p>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-semibold">02</div>
+            <div class="flex-1">
+              <h2 class="font-semibold text-white">Treasure Card — 수익형 자산</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-400">
+                스테이지마다 그 세계관의 <span class="gold">재화(Wealth)</span>를 상징하는 3종의 보물 아이템으로 구성됩니다.
+                골드로 구매·업그레이드하면 활성화되고, 활성 카드는 시간당 토큰을 자동 생산합니다.
+              </p>
+              <p class="mt-3 text-xs text-slate-500 leading-6">
+                공통 카드 UI 안에 각기 다른 트레저 아이콘이 삽입되는 형태. 방치형 수익 구조.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-medium">03</div>
-            <div>
-              <h2 class="font-semibold text-white">Casino 콘텐츠</h2>
-              <p class="mt-2 text-sm leading-7 text-slate-400">슬롯, 바카라, 이벤트 콘텐츠에 참여하세요. 다양한 게임 모드가 순환되며 지속적인 즐거움을 제공합니다.</p>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-semibold">03</div>
+            <div class="flex-1">
+              <h2 class="font-semibold text-white">관리인 노아 (NOA)</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-400">
+                행운의 신을 대리하는 고양이이자 트레저 카드 관리자.
+                신비롭지만 만사가 귀찮은 귀차니스트 — 당신의 성장을 귀찮아하면서도 은근히 챙기는 츤데레 조력자입니다.
+              </p>
+              <p class="mt-3 text-xs text-slate-500 leading-6">
+                트레저 카드 시스템 가이드 및 토큰 생산·수령 프로세스의 시각적 화자.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
           <div class="flex items-start gap-4">
-            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-stone-600/10 text-stone-400 text-sm font-medium">04</div>
-            <div>
-              <h2 class="font-semibold text-white">포인트 &amp; 소셜 확장</h2>
-              <p class="mt-2 text-sm leading-7 text-slate-400">Guru Points 적립, 친구 초대, 시즌 미션으로 지속적인 참여를 유도합니다. 리더보드로 커뮤니티와 경쟁하세요.</p>
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-semibold">04</div>
+            <div class="flex-1">
+              <h2 class="font-semibold text-white">Raid &amp; PvP</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-400">
+                스핀 결과에 따라 다른 플레이어의 보물을 공격하거나, 방어하거나, 레이드에 참여할 수 있습니다.
+                단순한 슬롯이 아닌 <span class="gold">소셜 PvP 레이어</span>가 살아 있는 이유입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-amber-700/30 bg-gradient-to-br from-amber-900/10 to-transparent p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/20 text-amber-400 text-sm font-semibold">05</div>
+            <div class="flex-1">
+              <h2 class="font-semibold text-white">LP (Lupin Points) — Cross-Game Asset</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-400">
+                모든 플레이가 LP로 쌓입니다. LP는 단순 포인트가 아닌 복합 자산입니다.
+              </p>
+              <ul class="mt-3 space-y-1.5 text-sm text-slate-400">
+                <li>• <span class="text-slate-300 font-medium">① 게임 내 화폐</span> — Lupin Spin 내부 획득·소비</li>
+                <li>• <span class="text-slate-300 font-medium">② 크로스 게임 자산</span> — Lupin Hub로 다른 DreamDo 게임에서 사용</li>
+                <li>• <span class="text-slate-300 font-medium">③ 교환 가능</span> — 특정 시점에 티켓·리워드로 교환</li>
+                <li>• <span class="text-slate-300 font-medium">④ 성장 공유 수단</span> — DreamDo의 성장을 유저와 함께</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
+          <div class="flex items-start gap-4">
+            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-amber-700/10 text-amber-500/80 text-sm font-semibold">06</div>
+            <div class="flex-1">
+              <h2 class="font-semibold text-white">Telegram Native</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-400">
+                별도 앱 설치 없이 Telegram 안에서 바로 플레이.
+                <span class="gold">@LupinSpinDevBot</span>을 열고 Play 버튼을 누르면 즉시 시작됩니다.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Info callout -->
-      <div class="mt-8 rounded-lg border border-stone-600/20 bg-stone-600/5 px-4 py-3.5 text-sm text-stone-400">
-        <span class="font-semibold">참고:</span> 모든 기능은 Telegram 계정만 있으면 바로 사용 가능하며, 기본 플레이는 무료입니다.
+      <!-- Scenario teaser -->
+      <section class="mt-14">
+        <h2 class="text-xl font-semibold tracking-tight mb-4">세계관 — 위대한 착각과 진정한 보물</h2>
+        <div class="rounded-xl border border-white/10 bg-white/[0.02] p-6 text-sm leading-7 text-slate-400 space-y-4">
+          <p>
+            세상의 모든 진귀한 물건을 탐내는 천재적인 도둑 <span class="gold">루핀</span>. 그에게 인생의 유일한 목적은
+            자신의 은신처를 세상에 단 하나뿐인 전리품들로 가득 채우는 것입니다.
+          </p>
+          <p>
+            어느 날, 보물에서 뿜어져 나오는 부의 기운에 홀려 정체불명의 고양이 <span class="gold">노아</span>가 찾아옵니다.
+            만사가 귀찮은 노아는 보물을 관리해주는 대가로 루핀과 기묘한 동거를 시작합니다.
+          </p>
+          <p>
+            노아는 보물의 부의 에너지를 정제해 동그란 <span class="gold">토큰</span>으로 만듭니다.
+            루핀은 그저 "반짝이는 찌꺼기"로 여기지만, 사실 이 토큰은 세상 그 어떤 황금보다 귀한 '부의 정수' 그 자체입니다.
+          </p>
+        </div>
+      </section>
+
+      <div class="mt-8 rounded-lg border border-amber-700/20 bg-amber-700/5 px-4 py-3.5 text-sm text-amber-200/80">
+        <span class="font-semibold">Note:</span> 기본 플레이는 무료이며, Telegram 계정만 있으면 바로 시작할 수 있습니다.
+        실제 현금 베팅은 없습니다.
       </div>
 
       <div class="mt-14 flex items-center justify-between border-t border-white/10 pt-8 text-sm">
@@ -163,8 +245,8 @@
 
     <footer class="border-t border-white/10 px-6 py-5 lg:px-10">
       <div class="mx-auto max-w-3xl flex items-center justify-between text-xs text-slate-600">
-        <span>© 2026 Lupin Spin</span>
-        <span>Lupin Spin Docs</span>
+        <span>© 2026 DreamDo</span>
+        <span>Grow together. Play together.</span>
       </div>
     </footer>
   </div>
