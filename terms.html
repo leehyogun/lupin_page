@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lupin Spin Docs | Terms of Service</title>
+  <title>Terms of Service — Lupin Spin Docs</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -19,72 +20,70 @@
     .prose p { color: #6b6258; line-height: 1.75; font-size: 0.9375rem; margin-bottom: 0.75rem; }
   </style>
 </head>
-<body class="bg-[#0a0908] text-white">
+<body data-page="terms" class="bg-[#0a0908] text-white">
+
+  <div class="lang-toggle lang-toggle-fixed" role="group" aria-label="Language">
+    <button type="button" data-lang-btn="en">EN</button>
+    <span class="divider">|</span>
+    <button type="button" data-lang-btn="ko">KO</button>
+  </div>
 
   <div class="sticky top-0 z-40 flex items-center gap-3 border-b border-white/10 bg-[#0a0908]/90 px-4 py-3 backdrop-blur md:hidden">
     <button onclick="document.getElementById('sidebar').classList.toggle('-translate-x-full');document.getElementById('overlay').classList.toggle('hidden')" class="rounded-md p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white">
       <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
-    <span class="text-sm font-semibold">Lupin Spin Docs</span>
+    <span class="text-sm font-semibold" data-i18n="docs.mobile_title">Lupin Spin Docs</span>
   </div>
 
   <div id="overlay" class="fixed inset-0 z-30 hidden bg-black/60 md:hidden" onclick="document.getElementById('sidebar').classList.add('-translate-x-full');this.classList.add('hidden')"></div>
 
   <aside id="sidebar" class="sidebar fixed left-0 top-0 z-40 flex h-screen w-64 -translate-x-full flex-col overflow-y-auto border-r border-white/10 bg-[#0e0d0c] transition-transform duration-200 md:translate-x-0">
     <div class="flex items-center gap-3 border-b border-white/10 px-4 py-4">
-      <div class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl border border-amber-700/30 bg-[#1a1710] text-sm font-bold text-amber-500">LS</div>
+      <img src="assets/icon.webp" alt="Lupin Spin" class="h-9 w-9 rounded-xl object-cover" style="filter: drop-shadow(0 0 6px rgba(240,165,0,0.4));">
       <div>
         <p class="text-sm font-semibold">Lupin Spin</p>
-        <p class="text-xs text-slate-500">Documentation</p>
+        <p class="text-xs text-slate-500" data-i18n="docs.brand_sub">Documentation</p>
       </div>
     </div>
 
-    <div class="px-3 pt-3 pb-2">
-      <div class="flex w-full items-center gap-2 rounded-md bg-white/5 px-3 py-2 text-sm text-slate-500 ring-1 ring-white/5">
-        <svg class="h-3.5 w-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-5.197-5.197A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
-        <span class="flex-1 text-xs">검색...</span>
-        <kbd class="rounded bg-white/10 px-1.5 py-0.5 text-xs">⌘K</kbd>
-      </div>
-    </div>
-
-    <nav class="flex-1 px-3 py-2 space-y-0.5 text-sm">
-      <p class="px-3 pb-1 pt-3 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Overview</p>
+    <nav class="flex-1 px-3 py-4 space-y-0.5 text-sm">
+      <p class="px-3 pb-1 pt-2 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]" data-i18n="docs.section.overview">Overview</p>
       <a href="index.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
-        Welcome
+        <span data-i18n="docs.nav.welcome">Welcome</span>
       </a>
 
-      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Getting Started</p>
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]" data-i18n="docs.section.getting_started">Getting Started</p>
       <a href="features.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
-        Features
+        <span data-i18n="docs.nav.features">Features</span>
       </a>
       <a href="how-to-play.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"/></svg>
-        How to Play
+        <span data-i18n="docs.nav.how_to_play">How to Play</span>
       </a>
 
-      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Support</p>
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]" data-i18n="docs.section.support">Support</p>
       <a href="faq.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
-        FAQ
+        <span data-i18n="docs.nav.faq">FAQ</span>
       </a>
 
-      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]">Legal</p>
+      <p class="px-3 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-wider text-[#3d3830]" data-i18n="docs.section.legal">Legal</p>
       <a href="privacy.html" class="nav-item flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
-        Privacy Policy
+        <span data-i18n="docs.nav.privacy">Privacy Policy</span>
       </a>
       <a href="terms.html" class="nav-active flex items-center gap-2.5 rounded-md px-3 py-2 transition-colors">
         <svg class="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
-        Terms of Service
+        <span data-i18n="docs.nav.terms">Terms of Service</span>
       </a>
     </nav>
 
     <div class="border-t border-white/10 p-4">
       <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs text-slate-500 hover:text-amber-500 transition-colors">
         <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/></svg>
-        Play on Telegram
+        <span data-i18n="docs.play_on_telegram">Play on Telegram</span>
       </a>
     </div>
   </aside>
@@ -93,41 +92,41 @@
     <main class="mx-auto max-w-3xl px-6 py-12 lg:px-10">
 
       <nav class="mb-8 flex items-center gap-1.5 text-xs text-slate-600">
-        <a href="index.html" class="hover:text-slate-400 transition-colors">Lupin Spin Docs</a>
+        <a href="index.html" class="hover:text-slate-400 transition-colors" data-i18n="docs.breadcrumb.docs">Lupin Spin Docs</a>
         <span>/</span>
-        <span class="text-slate-600">Legal</span>
+        <span class="text-slate-600" data-i18n="docs.breadcrumb.legal">Legal</span>
         <span>/</span>
-        <span class="text-slate-400">Terms of Service</span>
+        <span class="text-slate-400" data-i18n="docs.nav.terms">Terms of Service</span>
       </nav>
 
-      <h1 class="text-[2.75rem] font-semibold tracking-tight">Terms of Service</h1>
-      <p class="mt-3 text-xs text-slate-600">Last updated: March 2026</p>
+      <h1 class="text-[2.75rem] font-semibold tracking-tight" data-i18n="terms.h1">Terms of Service</h1>
+      <p class="mt-3 text-xs text-slate-600" data-i18n="terms.updated">Last updated: March 2026</p>
 
       <div class="prose mt-8">
 
-        <h2>1. 서비스 이용</h2>
-        <p>Lupin Spin은 Telegram Mini App을 통해 제공되는 Slot RPG 게임 서비스입니다. 만 18세 이상의 사용자만 이용 가능합니다. 서비스 이용 시 본 약관에 동의한 것으로 간주합니다.</p>
+        <h2 data-i18n="terms.s1.h2">1. Use of the Service</h2>
+        <p data-i18n="terms.s1.p">Lupin Spin is a Slot RPG service provided through a Telegram Mini App. Available to users aged 18 and over. By using the service you agree to these terms.</p>
 
-        <h2>2. 가상 재화</h2>
-        <p>게임 내 모든 재화(LP, 골드, 토큰 등)는 가상 재화이며 실제 금전적 가치가 없습니다. 가상 재화는 환불되지 않으며, 계정 간 양도가 불가능합니다.</p>
+        <h2 data-i18n="terms.s2.h2">2. Virtual Goods</h2>
+        <p data-i18n="terms.s2.p">All in-game goods (LP, gold, tokens, etc.) are virtual goods with no real-world monetary value. Virtual goods are non-refundable and non-transferable between accounts.</p>
 
-        <h2>3. 계정 정책</h2>
-        <p>계정 공유, 자동화 프로그램(봇) 사용, 부정 행위는 계정 정지 사유가 됩니다. 1인 1계정 원칙을 준수해 주세요.</p>
+        <h2 data-i18n="terms.s3.h2">3. Account Policy</h2>
+        <p data-i18n="terms.s3.p">Account sharing, use of automation (bots), and cheating may result in account suspension. Please follow the one-account-per-person rule.</p>
 
-        <h2>4. 이용 제한</h2>
-        <p>서비스 운영 정책을 위반할 경우 사전 통보 없이 이용이 제한될 수 있습니다. 반복 위반 시 영구 이용 정지 처분이 내려질 수 있습니다.</p>
+        <h2 data-i18n="terms.s4.h2">4. Usage Restrictions</h2>
+        <p data-i18n="terms.s4.p">Violations of operational policy may lead to service restrictions without prior notice. Repeated violations may result in permanent suspension.</p>
 
-        <h2>5. 면책 조항</h2>
-        <p>DreamDo는 서비스 중단, 데이터 손실, 네트워크 오류 등으로 인한 손해에 대해 책임을 지지 않습니다. 서비스는 현재 상태(as-is)로 제공됩니다.</p>
+        <h2 data-i18n="terms.s5.h2">5. Disclaimer</h2>
+        <p data-i18n="terms.s5.p">DreamDo is not liable for damages caused by service interruptions, data loss, network errors, or similar. The service is provided as-is.</p>
 
-        <h2>6. 약관 변경</h2>
-        <p>약관은 사전 공지 후 변경될 수 있습니다. 변경 후 서비스를 계속 이용할 경우 변경된 약관에 동의한 것으로 간주합니다.</p>
+        <h2 data-i18n="terms.s6.h2">6. Changes to Terms</h2>
+        <p data-i18n="terms.s6.p">Terms may be changed with prior notice. Continued use of the service after a change constitutes acceptance of the updated terms.</p>
       </div>
 
       <div class="mt-14 flex items-center justify-between border-t border-white/10 pt-8 text-sm">
         <a href="privacy.html" class="group flex flex-col gap-0.5">
-          <span class="text-xs text-slate-600 group-hover:text-slate-400 transition-colors">← Previous</span>
-          <span class="font-semibold text-slate-300 group-hover:text-white transition-colors">Privacy Policy</span>
+          <span class="text-xs text-slate-600 group-hover:text-slate-400 transition-colors" data-i18n="terms.prev">← Previous</span>
+          <span class="font-semibold text-slate-300 group-hover:text-white transition-colors" data-i18n="terms.prev_title">Privacy Policy</span>
         </a>
         <div></div>
       </div>
@@ -135,11 +134,12 @@
 
     <footer class="border-t border-white/10 px-6 py-5 lg:px-10">
       <div class="mx-auto max-w-3xl flex items-center justify-between text-xs text-slate-600">
-        <span>© 2026 DreamDo</span>
-        <span>Lupin Spin Docs</span>
+        <span data-i18n="docs.footer.copyright">© 2026 DreamDo</span>
+        <span data-i18n="docs.footer.tagline">Grow together. Play together.</span>
       </div>
     </footer>
   </div>
 
+  <script src="assets/js/i18n.js" defer></script>
 </body>
 </html>

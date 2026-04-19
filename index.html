@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lupin Spin — Slot RPG on Telegram</title>
-  <meta name="description" content="Spin. Raid. Build. Earn. 슬롯으로 시작해, 카드로 키우고, 플레이어와 겨룬다. 쌓인 LP는 게임을 넘나들고, 우리와 함께 자란다." />
+  <meta name="description" content="Spin. Raid. Build. Earn. Start with slots, grow with cards, compete with players. Your LP travels across games and grows with us." />
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -262,7 +262,7 @@
     }
   </style>
 </head>
-<body class="bg-[#08080f] text-white overflow-x-hidden">
+<body data-page="index" class="bg-[#08080f] text-white overflow-x-hidden">
 
   <!-- ── TOP NAV ── -->
   <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 lg:px-12"
@@ -273,18 +273,26 @@
     </a>
 
     <nav class="hidden md:flex items-center gap-7 text-sm">
-      <a href="features.html" class="nav-link">Features</a>
-      <a href="how-to-play.html" class="nav-link">How to Play</a>
-      <a href="#lp-economy" class="nav-link">LP Economy</a>
-      <a href="#roadmap" class="nav-link">Roadmap</a>
-      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="features.html" class="nav-link" data-i18n="nav.features">Features</a>
+      <a href="how-to-play.html" class="nav-link" data-i18n="nav.how_to_play">How to Play</a>
+      <a href="#lp-economy" class="nav-link" data-i18n="nav.lp_economy">LP Economy</a>
+      <a href="#roadmap" class="nav-link" data-i18n="nav.roadmap">Roadmap</a>
+      <a href="faq.html" class="nav-link" data-i18n="nav.faq">FAQ</a>
     </nav>
 
-    <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer"
-      class="btn-primary glow-btn hidden md:inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-bold text-black">
-      <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-      Play Now
-    </a>
+    <div class="flex items-center gap-3">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en">EN</button>
+        <span class="divider">|</span>
+        <button type="button" data-lang-btn="ko">KO</button>
+      </div>
+
+      <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer"
+        class="btn-primary glow-btn hidden md:inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-bold text-black">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        <span data-i18n="nav.play_now">Play Now</span>
+      </a>
+    </div>
   </header>
 
   <!-- ── HERO (full-bleed video bg) ── -->
@@ -316,7 +324,7 @@
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
             </span>
-            🎰 Slot RPG on Telegram — Beta Live
+            <span data-i18n="hero.badge">🎰 Slot RPG on Telegram — Beta Live</span>
           </div>
         </div>
 
@@ -327,20 +335,20 @@
           <span class="shimmer-text">Earn.</span>
         </h1>
 
-        <p class="fade-up fade-up-d3 mt-6 text-base sm:text-lg text-[#b0b0c4] leading-7 max-w-lg">
-          슬롯으로 시작해, 카드로 키우고, 플레이어와 겨룬다.<br>
-          쌓인 <span class="text-yellow-400 font-semibold">LP는 게임을 넘나들고, 우리와 함께 자란다.</span>
+        <p class="fade-up fade-up-d3 mt-6 text-base sm:text-lg text-[#b0b0c4] leading-7 max-w-lg" data-i18n="hero.sub">
+          Start with slots, grow with cards, compete with players.<br>
+          <span class="text-yellow-400 font-semibold">Your LP travels across games and grows with us.</span>
         </p>
 
         <div class="fade-up fade-up-d4 mt-8 flex flex-col sm:flex-row items-center sm:items-start gap-3">
           <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer"
             class="btn-primary glow-btn w-full sm:w-auto inline-flex items-center justify-center gap-2.5 rounded-2xl px-8 py-4 text-base font-black text-black">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            Telegram에서 플레이
+            <span data-i18n="hero.cta.primary">Play on Telegram</span>
           </a>
           <a href="how-to-play.html"
             class="btn-secondary w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-2xl px-7 py-4 text-base font-semibold">
-            How to Play
+            <span data-i18n="hero.cta.secondary">How to Play</span>
             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -348,23 +356,23 @@
         <!-- Stats -->
         <div class="fade-up fade-up-d4 mt-10 grid grid-cols-3 gap-3 sm:gap-4 max-w-lg">
           <div class="stat-card rounded-2xl p-4 text-center">
-            <div class="text-sm sm:text-base font-black gold-text">Slot RPG</div>
-            <div class="text-[10px] sm:text-xs text-[#8a8aa0] mt-1 font-medium">Play &amp; Build</div>
+            <div class="text-sm sm:text-base font-black gold-text" data-i18n="hero.stat1.title">Slot RPG</div>
+            <div class="text-[10px] sm:text-xs text-[#8a8aa0] mt-1 font-medium" data-i18n="hero.stat1.sub">Play &amp; Build</div>
           </div>
           <div class="stat-card rounded-2xl p-4 text-center">
-            <div class="text-sm sm:text-base font-black gold-text">Cross-Game</div>
-            <div class="text-[10px] sm:text-xs text-[#8a8aa0] mt-1 font-medium">LP Economy</div>
+            <div class="text-sm sm:text-base font-black gold-text" data-i18n="hero.stat2.title">Cross-Game</div>
+            <div class="text-[10px] sm:text-xs text-[#8a8aa0] mt-1 font-medium" data-i18n="hero.stat2.sub">LP Economy</div>
           </div>
           <div class="stat-card rounded-2xl p-4 text-center">
-            <div class="text-sm sm:text-base font-black gold-text">Grow with Us</div>
-            <div class="text-[10px] sm:text-xs text-[#8a8aa0] mt-1 font-medium">DreamDo 시리즈</div>
+            <div class="text-sm sm:text-base font-black gold-text" data-i18n="hero.stat3.title">Grow with Us</div>
+            <div class="text-[10px] sm:text-xs text-[#8a8aa0] mt-1 font-medium" data-i18n="hero.stat3.sub">DreamDo Series</div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-40 z-10">
-      <div class="text-xs text-slate-300">scroll</div>
+      <div class="text-xs text-slate-300" data-i18n="hero.scroll">scroll</div>
       <div class="w-px h-8 bg-gradient-to-b from-slate-300 to-transparent"></div>
     </div>
   </section>
@@ -375,11 +383,11 @@
   <section id="game-loop" class="relative py-24 px-6 lg:px-12 overflow-hidden" style="background: #09090f;">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-14">
-        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Game Loop</p>
-        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-4">하나의 슬롯, 끝없는 성장</h2>
-        <p class="text-base text-[#8a8aa0] max-w-xl mx-auto leading-7">
-          Lupin Spin은 단순한 슬롯이 아닙니다.<br>
-          모든 스핀이 당신의 여정을 움직입니다.
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3" data-i18n="gameloop.kicker">Game Loop</p>
+        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-4" data-i18n="gameloop.h2">One slot. Endless growth.</h2>
+        <p class="text-base text-[#8a8aa0] max-w-xl mx-auto leading-7" data-i18n="gameloop.sub">
+          Lupin Spin isn't just a slot.<br>
+          Every spin moves your journey forward.
         </p>
       </div>
 
@@ -387,32 +395,32 @@
         <div class="loop-card rounded-3xl p-6">
           <div class="loop-badge inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black mb-4">01</div>
           <div class="text-2xl mb-2">🎰</div>
-          <h3 class="text-lg font-black tracking-tight mb-2">SPIN</h3>
-          <p class="text-sm text-[#7a7a92] leading-6">에너지를 태워 슬롯을 돌린다.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2" data-i18n="gameloop.step1.title">SPIN</h3>
+          <p class="text-sm text-[#7a7a92] leading-6" data-i18n="gameloop.step1.desc">Burn energy. Spin the slot.</p>
         </div>
         <div class="loop-card rounded-3xl p-6">
           <div class="loop-badge inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black mb-4">02</div>
           <div class="text-2xl mb-2">💰</div>
-          <h3 class="text-lg font-black tracking-tight mb-2">WIN</h3>
-          <p class="text-sm text-[#7a7a92] leading-6">골드, 심볼, 카드, 퀘스트를 획득한다.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2" data-i18n="gameloop.step2.title">WIN</h3>
+          <p class="text-sm text-[#7a7a92] leading-6" data-i18n="gameloop.step2.desc">Earn gold, symbols, cards, and quests.</p>
         </div>
         <div class="loop-card rounded-3xl p-6">
           <div class="loop-badge inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black mb-4">03</div>
           <div class="text-2xl mb-2">⚔️</div>
-          <h3 class="text-lg font-black tracking-tight mb-2">RAID</h3>
-          <p class="text-sm text-[#7a7a92] leading-6">다른 플레이어와 공격·방어·레이드.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2" data-i18n="gameloop.step3.title">RAID</h3>
+          <p class="text-sm text-[#7a7a92] leading-6" data-i18n="gameloop.step3.desc">Attack, defend, and raid other players.</p>
         </div>
         <div class="loop-card rounded-3xl p-6">
           <div class="loop-badge inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black mb-4">04</div>
           <div class="text-2xl mb-2">🃏</div>
-          <h3 class="text-lg font-black tracking-tight mb-2">BUILD</h3>
-          <p class="text-sm text-[#7a7a92] leading-6">스테이지별 트레저 카드 구매·업그레이드.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2" data-i18n="gameloop.step4.title">BUILD</h3>
+          <p class="text-sm text-[#7a7a92] leading-6" data-i18n="gameloop.step4.desc">Buy and upgrade stage-specific treasure cards.</p>
         </div>
         <div class="loop-card rounded-3xl p-6" style="border-color: rgba(245,200,66,0.25); background: linear-gradient(160deg, rgba(245,200,66,0.08) 0%, rgba(245,200,66,0.01) 100%);">
           <div class="loop-badge inline-flex h-9 w-9 items-center justify-center rounded-xl text-sm font-black mb-4">05</div>
           <div class="text-2xl mb-2">✨</div>
-          <h3 class="text-lg font-black tracking-tight mb-2 gold-text">EARN</h3>
-          <p class="text-sm text-[#9a9ab0] leading-6">모든 플레이가 LP로 쌓인다.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2 gold-text" data-i18n="gameloop.step5.title">EARN</h3>
+          <p class="text-sm text-[#9a9ab0] leading-6" data-i18n="gameloop.step5.desc">Every play earns LP.</p>
         </div>
       </div>
 
@@ -427,15 +435,13 @@
             style="background: radial-gradient(ellipse at center, transparent 40%, rgba(8,8,15,0.5) 100%);"></div>
         </div>
         <div>
-          <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Win · Symbol Quest</p>
-          <h3 class="text-3xl lg:text-4xl font-black tracking-tight mb-4">심볼이 모이면,<br>카드가 터진다.</h3>
-          <p class="text-base text-[#8a8aa0] leading-7 mb-6">
-            슬롯에서 나온 특정 심볼을 모으면 <span class="text-yellow-400 font-semibold">카드 퀘스트</span>가 완료됩니다.
-            퀘스트를 완성할 때마다 보너스 골드가 터져 나와 당신의 지갑으로 쏟아집니다.
+          <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3" data-i18n="gameloop.anchor.kicker">Win · Symbol Quest</p>
+          <h3 class="text-3xl lg:text-4xl font-black tracking-tight mb-4" data-i18n="gameloop.anchor.h3">Symbols align.<br>Cards burst.</h3>
+          <p class="text-base text-[#8a8aa0] leading-7 mb-6" data-i18n="gameloop.anchor.p1">
+            Collect specific symbols from the slot to complete <span class="text-yellow-400 font-semibold">card quests</span>. Every finished quest bursts bonus gold into your wallet.
           </p>
-          <p class="text-base text-[#8a8aa0] leading-7">
-            모든 스핀이 퀘스트를 움직이고,
-            그 골드로 다시 트레저 카드를 키워 <span class="text-yellow-400 font-semibold">LP</span>로 이어집니다.
+          <p class="text-base text-[#8a8aa0] leading-7" data-i18n="gameloop.anchor.p2">
+            Every spin pushes a quest forward. That gold grows your treasure cards, which build your <span class="text-yellow-400 font-semibold">LP</span>.
           </p>
         </div>
       </div>
@@ -460,37 +466,37 @@
           style="backdrop-filter: blur(8px);">
           <div class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-0 h-0"
             style="border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 10px solid rgba(120,80,0,0.3);"></div>
-          <p class="text-sm font-bold text-yellow-400">하암… 시작해볼래? 🐾</p>
+          <p class="text-sm font-bold text-yellow-400" data-i18n="getstarted.cat_bubble">Shall we start? 🐾</p>
         </div>
       </div>
 
       <div class="flex-1 w-full">
-        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Get Started</p>
-        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-10">3단계로 시작하기</h2>
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3" data-i18n="getstarted.kicker">Get Started</p>
+        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-10" data-i18n="getstarted.h2">Start in three steps</h2>
 
         <div class="space-y-6">
           <div class="flex items-start gap-5">
             <div class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-2xl font-black text-black text-lg"
               style="background: linear-gradient(135deg, #f5c842, #f09010);">01</div>
             <div>
-              <h3 class="font-bold mb-1">Telegram에서 열기</h3>
-              <p class="text-sm text-[#7a7a92] leading-6">Telegram에서 <span class="text-yellow-500 font-semibold">@LupinSpinDevBot</span>을 검색하거나 링크를 누르세요.</p>
+              <h3 class="font-bold mb-1" data-i18n="getstarted.step1.title">Open in Telegram</h3>
+              <p class="text-sm text-[#7a7a92] leading-6" data-i18n="getstarted.step1.desc">Search for <span class="text-yellow-500 font-semibold">@LupinSpinDevBot</span> in Telegram or tap the link.</p>
             </div>
           </div>
           <div class="flex items-start gap-5">
             <div class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-2xl font-black text-black text-lg"
               style="background: linear-gradient(135deg, #f5c842, #f09010);">02</div>
             <div>
-              <h3 class="font-bold mb-1">첫 스핀</h3>
-              <p class="text-sm text-[#7a7a92] leading-6">에너지로 슬롯을 돌려 골드와 심볼을 모으세요. 모든 스핀이 기록됩니다.</p>
+              <h3 class="font-bold mb-1" data-i18n="getstarted.step2.title">Your first spin</h3>
+              <p class="text-sm text-[#7a7a92] leading-6" data-i18n="getstarted.step2.desc">Spend energy on a spin and collect gold and symbols. Every spin counts.</p>
             </div>
           </div>
           <div class="flex items-start gap-5">
             <div class="flex-shrink-0 flex h-12 w-12 items-center justify-center rounded-2xl font-black text-black text-lg"
               style="background: linear-gradient(135deg, #f5c842, #f09010);">03</div>
             <div>
-              <h3 class="font-bold mb-1">카드를 키우고 LP를 모으세요</h3>
-              <p class="text-sm text-[#7a7a92] leading-6">트레저 카드를 업그레이드하면 LP가 자동으로 쌓입니다. 다른 플레이어와 겨루는 것도 잊지 말고요.</p>
+              <h3 class="font-bold mb-1" data-i18n="getstarted.step3.title">Grow cards, stack LP</h3>
+              <p class="text-sm text-[#7a7a92] leading-6" data-i18n="getstarted.step3.desc">Upgrade treasure cards and LP piles up on its own. Don't forget to compete with other players either.</p>
             </div>
           </div>
         </div>
@@ -499,11 +505,11 @@
           <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer"
             class="btn-primary glow-btn inline-flex items-center justify-center gap-2.5 rounded-2xl px-8 py-4 text-base font-black text-black">
             <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            지금 바로 시작하기
+            <span data-i18n="getstarted.cta.primary">Play Now</span>
           </a>
           <a href="how-to-play.html"
             class="btn-secondary inline-flex items-center justify-center gap-2 rounded-2xl px-7 py-4 text-base font-semibold">
-            전체 플레이 가이드
+            <span data-i18n="getstarted.cta.secondary">Full Play Guide</span>
             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -526,13 +532,13 @@
 
     <div class="relative max-w-6xl mx-auto">
       <div class="text-center mb-12">
-        <p class="text-xs font-bold uppercase tracking-widest text-yellow-500 mb-3">LP — Grow with Us</p>
-        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-5">
-          <span class="gold-text">LP</span> — 당신이 쌓은 것은<br>사라지지 않는다
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-500 mb-3" data-i18n="lp.kicker">LP — Grow with Us</p>
+        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-5" data-i18n="lp.h2">
+          <span class="gold-text">LP</span> — What you earn<br>doesn't disappear.
         </h2>
-        <p class="text-base text-[#9a9ab0] max-w-xl mx-auto leading-7">
-          LP는 단순한 게임 포인트가 아닙니다.<br>
-          DreamDo 생태계와 함께 자라는, 당신의 몫입니다.
+        <p class="text-base text-[#9a9ab0] max-w-xl mx-auto leading-7" data-i18n="lp.sub">
+          LP isn't just a game point.<br>
+          It's your share, growing with the DreamDo ecosystem.
         </p>
       </div>
 
@@ -549,8 +555,8 @@
             style="background: radial-gradient(ellipse at center, transparent 55%, rgba(8,8,15,0.55) 100%);"></div>
           <div class="pointer-events-none absolute bottom-0 left-0 right-0 p-5 lg:p-7"
             style="background: linear-gradient(to top, rgba(8,8,15,0.85) 0%, transparent 100%);">
-            <p class="text-xs font-bold uppercase tracking-widest text-yellow-500/90 mb-1">The LP Moment</p>
-            <p class="text-sm lg:text-base text-white/90 leading-6">모든 스핀, 모든 카드, 모든 레이드 — 그 끝에 LP가 터진다.</p>
+            <p class="text-xs font-bold uppercase tracking-widest text-yellow-500/90 mb-1" data-i18n="lp.anchor.kicker">The LP Moment</p>
+            <p class="text-sm lg:text-base text-white/90 leading-6" data-i18n="lp.anchor.caption">Every spin, every card, every raid — at the end, LP bursts.</p>
           </div>
         </div>
       </div>
@@ -558,26 +564,26 @@
       <div class="grid gap-5 md:grid-cols-3">
         <div class="lp-card rounded-3xl p-7">
           <div class="text-3xl mb-4">🎮</div>
-          <h3 class="text-xl font-black tracking-tight mb-3">Earn in Play</h3>
-          <p class="text-sm text-[#9a9ab0] leading-7">슬롯, 레이드, 카드 — 모든 플레이가 LP로 쌓입니다.</p>
+          <h3 class="text-xl font-black tracking-tight mb-3" data-i18n="lp.card1.title">Earn in Play</h3>
+          <p class="text-sm text-[#9a9ab0] leading-7" data-i18n="lp.card1.desc">Slots, raids, cards — every play earns LP.</p>
         </div>
         <div class="lp-card rounded-3xl p-7">
           <div class="text-3xl mb-4">🔗</div>
-          <h3 class="text-xl font-black tracking-tight mb-3">Use Anywhere</h3>
-          <p class="text-sm text-[#9a9ab0] leading-7">Lupin Hub를 통해 DreamDo의 다른 게임에서 사용합니다.</p>
+          <h3 class="text-xl font-black tracking-tight mb-3" data-i18n="lp.card2.title">Use Anywhere</h3>
+          <p class="text-sm text-[#9a9ab0] leading-7" data-i18n="lp.card2.desc">Use LP across other DreamDo games through Lupin Hub.</p>
         </div>
         <div class="lp-card rounded-3xl p-7">
           <div class="text-3xl mb-4">🌱</div>
-          <h3 class="text-xl font-black tracking-tight mb-3">Grow with Us</h3>
-          <p class="text-sm text-[#9a9ab0] leading-7">특정 시점에 티켓과 리워드로 교환. 우리가 커지면, 당신도 커집니다.</p>
+          <h3 class="text-xl font-black tracking-tight mb-3" data-i18n="lp.card3.title">Grow with Us</h3>
+          <p class="text-sm text-[#9a9ab0] leading-7" data-i18n="lp.card3.desc">Exchange for tickets and rewards at the right moment. As we grow, you grow.</p>
         </div>
       </div>
 
       <div class="mt-12 text-center max-w-2xl mx-auto">
-        <p class="text-xl lg:text-2xl font-black tracking-tight mb-2 shimmer-text">
+        <p class="text-xl lg:text-2xl font-black tracking-tight mb-2 shimmer-text" data-i18n="lp.quote">
           "LP is how we stay in this together."
         </p>
-        <p class="text-sm text-[#7a7a92]">게임이 끝나도, 당신의 LP는 남습니다.</p>
+        <p class="text-sm text-[#7a7a92]" data-i18n="lp.quote_sub">Even after the game ends, your LP remains.</p>
       </div>
     </div>
   </section>
@@ -588,46 +594,46 @@
   <section id="roadmap" class="py-24 px-6 lg:px-12" style="background: #08080f;">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-14">
-        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Roadmap</p>
-        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-4">What's Next</h2>
-        <p class="text-base text-[#8a8aa0] max-w-xl mx-auto leading-7">
-          Lupin Spin은 시작입니다.<br>
-          DreamDo는 하나의 경제로 연결된 여러 게임을 만들고 있습니다.
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3" data-i18n="roadmap.kicker">Roadmap</p>
+        <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-4" data-i18n="roadmap.h2">What's Next</h2>
+        <p class="text-base text-[#8a8aa0] max-w-xl mx-auto leading-7" data-i18n="roadmap.sub">
+          Lupin Spin is just the beginning.<br>
+          DreamDo is building multiple games connected by one economy.
         </p>
       </div>
 
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         <div class="roadmap-node active rounded-3xl p-7">
           <div class="flex items-center gap-2 mb-4">
-            <span class="text-xs font-black px-2.5 py-1 rounded-full loop-badge">NOW</span>
+            <span class="text-xs font-black px-2.5 py-1 rounded-full loop-badge" data-i18n="roadmap.now.badge">NOW</span>
             <span class="text-2xl">🎰</span>
           </div>
-          <h3 class="text-lg font-black tracking-tight mb-2">Lupin Spin</h3>
-          <p class="text-sm text-[#9a9ab0] leading-6">Slot RPG · Beta Live</p>
+          <h3 class="text-lg font-black tracking-tight mb-2" data-i18n="roadmap.1.title">Lupin Spin</h3>
+          <p class="text-sm text-[#9a9ab0] leading-6" data-i18n="roadmap.1.desc">Slot RPG · Beta Live</p>
         </div>
         <div class="roadmap-node dimmed rounded-3xl p-7">
           <div class="flex items-center gap-2 mb-4">
-            <span class="text-xs font-black px-2.5 py-1 rounded-full border border-yellow-600/40 text-yellow-500">NEXT</span>
+            <span class="text-xs font-black px-2.5 py-1 rounded-full border border-yellow-600/40 text-yellow-500" data-i18n="roadmap.next.badge">NEXT</span>
             <span class="text-2xl">🔗</span>
           </div>
-          <h3 class="text-lg font-black tracking-tight mb-2">Lupin Hub</h3>
-          <p class="text-sm text-[#7a7a92] leading-6">통합 허브 미니앱. LP 경제의 중심. 모든 DreamDo 게임의 관문.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2" data-i18n="roadmap.2.title">Lupin Hub</h3>
+          <p class="text-sm text-[#7a7a92] leading-6" data-i18n="roadmap.2.desc">The unified hub mini-app. Heart of the LP economy. Gateway to every DreamDo game.</p>
         </div>
         <div class="roadmap-node dimmed rounded-3xl p-7">
           <div class="flex items-center gap-2 mb-4">
-            <span class="text-xs font-black px-2.5 py-1 rounded-full border border-yellow-600/40 text-yellow-500">THEN</span>
+            <span class="text-xs font-black px-2.5 py-1 rounded-full border border-yellow-600/40 text-yellow-500" data-i18n="roadmap.then.badge">THEN</span>
             <span class="text-2xl">♠️</span>
           </div>
-          <h3 class="text-lg font-black tracking-tight mb-2">Lupin Casino</h3>
-          <p class="text-sm text-[#7a7a92] leading-6">종합 카지노. 슬롯 20+종, 홀덤, 블랙잭, 보드 게임.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2" data-i18n="roadmap.3.title">Lupin Casino</h3>
+          <p class="text-sm text-[#7a7a92] leading-6" data-i18n="roadmap.3.desc">Full casino. 20+ slots, hold'em, blackjack, board games.</p>
         </div>
         <div class="roadmap-node dimmed rounded-3xl p-7">
           <div class="flex items-center gap-2 mb-4">
-            <span class="text-xs font-black px-2.5 py-1 rounded-full border border-yellow-600/40 text-yellow-500">LATER</span>
+            <span class="text-xs font-black px-2.5 py-1 rounded-full border border-yellow-600/40 text-yellow-500" data-i18n="roadmap.later.badge">LATER</span>
             <span class="text-2xl">⚔️</span>
           </div>
-          <h3 class="text-lg font-black tracking-tight mb-2">Lupin Quest <span class="text-xs text-[#5a5a72] font-medium">(가제)</span></h3>
-          <p class="text-sm text-[#7a7a92] leading-6">RPG 슬롯, 캐스케이딩 전투 시스템.</p>
+          <h3 class="text-lg font-black tracking-tight mb-2"><span data-i18n="roadmap.4.title">Lupin Quest</span> <span class="text-xs text-[#5a5a72] font-medium" data-i18n="roadmap.4.suffix">(working title)</span></h3>
+          <p class="text-sm text-[#7a7a92] leading-6" data-i18n="roadmap.4.desc">RPG slot with a cascading battle system.</p>
         </div>
       </div>
     </div>
@@ -643,11 +649,11 @@
     </div>
 
     <div class="relative max-w-6xl mx-auto px-6 lg:px-12 text-center mb-12">
-      <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Worlds in Motion</p>
-      <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-4">앞으로 추가될 세계들</h2>
-      <p class="text-base text-[#8a8aa0] max-w-xl mx-auto leading-7">
-        스테이지마다 다른 세계, 다른 보물.<br>
-        루핀의 컬렉션은 계속해서 확장됩니다.
+      <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3" data-i18n="worlds.kicker">Worlds in Motion</p>
+      <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-4" data-i18n="worlds.h2">Worlds coming soon</h2>
+      <p class="text-base text-[#8a8aa0] max-w-xl mx-auto leading-7" data-i18n="worlds.sub">
+        Different stages, different treasures.<br>
+        Lupin's collection keeps expanding.
       </p>
     </div>
 
@@ -671,7 +677,7 @@
       </div>
     </div>
 
-    <p class="text-center text-xs text-[#5a5a72] mt-8 px-6">* 이미지는 개발 중인 콘텐츠이며 실제 출시물과 다를 수 있습니다.</p>
+    <p class="text-center text-xs text-[#5a5a72] mt-8 px-6" data-i18n="worlds.caption">* Images are in development and may differ from final releases.</p>
   </section>
 
   <div class="gold-divider"></div>
@@ -681,33 +687,31 @@
     <div class="max-w-6xl mx-auto">
 
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">Made by DreamDo</p>
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3" data-i18n="about.kicker">Made by DreamDo</p>
         <h2 class="text-4xl lg:text-5xl font-black tracking-tight mb-5">
-          Grow together.<br>
-          <span class="gold-text">Play together.</span>
+          <span data-i18n="about.h2.1">Grow together.</span><br>
+          <span class="gold-text" data-i18n="about.h2.2">Play together.</span>
         </h2>
-        <p class="text-base text-[#8a8aa0] leading-7 mb-4">
-          DreamDo는 Telegram 위에서 게임을 만드는 퍼블리셔입니다.
-          우리는 플레이어의 시간이 진짜 가치로 남는 게임을 만듭니다.
+        <p class="text-base text-[#8a8aa0] leading-7 mb-4" data-i18n="about.p1">
+          DreamDo is a publisher making games on Telegram. We make games where the time you put in turns into real value.
         </p>
-        <p class="text-base text-[#8a8aa0] leading-7">
-          Lupin Spin은 우리의 첫 작품이자,
-          <span class="text-yellow-400 font-semibold">더 큰 생태계의 시작점</span>입니다.
+        <p class="text-base text-[#8a8aa0] leading-7" data-i18n="about.p2">
+          Lupin Spin is our first title, and <span class="text-yellow-400 font-semibold">the starting point of a larger ecosystem</span>.
         </p>
       </div>
 
       <div class="grid gap-5 md:grid-cols-3">
         <div class="principle-card rounded-3xl p-7">
-          <p class="text-[10px] font-black uppercase tracking-[0.2em] text-yellow-500 mb-3">Real Value</p>
-          <p class="text-sm text-[#9a9ab0] leading-7">LP는 장식이 아니라 약속이다. 유저가 얻은 것은 진짜다.</p>
+          <p class="text-[10px] font-black uppercase tracking-[0.2em] text-yellow-500 mb-3" data-i18n="about.principle1.label">Real Value</p>
+          <p class="text-sm text-[#9a9ab0] leading-7" data-i18n="about.principle1.desc">LP isn't decoration — it's a promise. What you earn is real.</p>
         </div>
         <div class="principle-card rounded-3xl p-7">
-          <p class="text-[10px] font-black uppercase tracking-[0.2em] text-yellow-500 mb-3">One Economy</p>
-          <p class="text-sm text-[#9a9ab0] leading-7">하나의 LP, 여러 게임. 당신이 쌓은 것은 어디서나 살아있다.</p>
+          <p class="text-[10px] font-black uppercase tracking-[0.2em] text-yellow-500 mb-3" data-i18n="about.principle2.label">One Economy</p>
+          <p class="text-sm text-[#9a9ab0] leading-7" data-i18n="about.principle2.desc">One LP, many games. What you've built lives everywhere.</p>
         </div>
         <div class="principle-card rounded-3xl p-7">
-          <p class="text-[10px] font-black uppercase tracking-[0.2em] text-yellow-500 mb-3">Grow Together</p>
-          <p class="text-sm text-[#9a9ab0] leading-7">우리가 크면, 당신도 큰다. 그게 게임이 끝나도 남는 이유다.</p>
+          <p class="text-[10px] font-black uppercase tracking-[0.2em] text-yellow-500 mb-3" data-i18n="about.principle3.label">Grow Together</p>
+          <p class="text-sm text-[#9a9ab0] leading-7" data-i18n="about.principle3.desc">When we grow, you grow. That's why it stays, even when the game ends.</p>
         </div>
       </div>
     </div>
@@ -719,29 +723,27 @@
   <section class="py-24 px-6 lg:px-12" style="background: #08080f;">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-12">
-        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3">FAQ</p>
-        <h2 class="text-4xl lg:text-5xl font-black tracking-tight">자주 묻는 질문</h2>
+        <p class="text-xs font-bold uppercase tracking-widest text-yellow-600 mb-3" data-i18n="faq_home.kicker">FAQ</p>
+        <h2 class="text-4xl lg:text-5xl font-black tracking-tight" data-i18n="faq_home.h2">Frequently Asked Questions</h2>
       </div>
 
       <div class="space-y-3">
         <details class="faq-item">
-          <summary>Lupin Spin은 도박 게임인가요?</summary>
-          <div class="faq-body">
-            아닙니다. Lupin Spin은 슬롯을 코어 루프로 활용하는 <strong>Slot RPG</strong>입니다.
-            실제 현금 베팅이 없고, 게임 내 진행과 성장이 목적입니다.
+          <summary data-i18n="faq_home.q1">Is Lupin Spin a gambling game?</summary>
+          <div class="faq-body" data-i18n="faq_home.a1">
+            No. Lupin Spin is a <strong>Slot RPG</strong> that uses slots as its core loop. There's no real-money betting — the point is in-game progression and growth.
           </div>
         </details>
         <details class="faq-item">
-          <summary>LP는 언제 티켓·리워드로 전환되나요?</summary>
-          <div class="faq-body">
-            로드맵의 특정 시점에 <strong>Lupin Hub</strong>를 통해 교환이 가능해질 예정입니다.
-            구체적 시점은 추후 공지합니다.
+          <summary data-i18n="faq_home.q2">When can LP be exchanged for tickets and rewards?</summary>
+          <div class="faq-body" data-i18n="faq_home.a2">
+            At a specific point on the roadmap, via <strong>Lupin Hub</strong>. The exact timing will be announced later.
           </div>
         </details>
         <details class="faq-item">
-          <summary>다른 DreamDo 게임에서도 LP를 사용할 수 있나요?</summary>
-          <div class="faq-body">
-            네, Lupin Hub 출시 이후 가능합니다. 하나의 LP로 여러 게임을 넘나듭니다.
+          <summary data-i18n="faq_home.q3">Can I use LP in other DreamDo games?</summary>
+          <div class="faq-body" data-i18n="faq_home.a3">
+            Yes, once Lupin Hub launches. One LP, many games.
           </div>
         </details>
       </div>
@@ -749,7 +751,7 @@
       <div class="mt-10 text-center">
         <a href="faq.html"
           class="btn-secondary inline-flex items-center justify-center gap-2 rounded-2xl px-7 py-3 text-sm font-semibold">
-          모든 FAQ 보기
+          <span data-i18n="faq_home.see_all">See all FAQ</span>
           <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </a>
       </div>
@@ -762,17 +764,18 @@
       <div class="flex items-center gap-3">
         <img src="assets/icon.webp" alt="Lupin Spin" class="h-8 w-8 rounded-lg object-cover">
         <div>
-          <div class="text-[#8a8aa0] font-semibold">© 2026 DreamDo. All rights reserved.</div>
-          <div class="text-[11px] mt-0.5">Grow together. Play together.</div>
+          <div class="text-[#8a8aa0] font-semibold" data-i18n="footer.copyright">© 2026 DreamDo. All rights reserved.</div>
+          <div class="text-[11px] mt-0.5" data-i18n="footer.tagline">Grow together. Play together.</div>
         </div>
       </div>
       <div class="flex items-center gap-6">
-        <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy</a>
-        <a href="terms.html" class="hover:text-slate-300 transition-colors">Terms</a>
+        <a href="privacy.html" class="hover:text-slate-300 transition-colors" data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" class="hover:text-slate-300 transition-colors" data-i18n="footer.terms">Terms</a>
         <a href="https://t.me/LupinSpinDevBot" target="_blank" rel="noopener noreferrer" class="hover:text-yellow-500 transition-colors">@LupinSpinDevBot</a>
       </div>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js" defer></script>
 </body>
 </html>
