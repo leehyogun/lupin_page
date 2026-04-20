@@ -87,19 +87,6 @@
       "gameloop.anchor.p1": "Collect specific symbols from the slot to complete <span class=\"text-yellow-400 font-semibold\">card quests</span>. Every finished quest bursts bonus gold into your wallet.",
       "gameloop.anchor.p2": "Every spin pushes a quest forward. That gold grows your treasure cards, which build your <span class=\"text-yellow-400 font-semibold\">LP</span>.",
 
-      // ── index: Get Started ──
-      "getstarted.kicker": "Get Started",
-      "getstarted.h2": "Start in three steps",
-      "getstarted.cat_bubble": "Shall we start? 🐾",
-      "getstarted.step1.title": "Open in Telegram",
-      "getstarted.step1.desc": "Search for <span class=\"text-yellow-500 font-semibold\">@LupinSpinBot</span> in Telegram or tap the link.",
-      "getstarted.step2.title": "Your first spin",
-      "getstarted.step2.desc": "Spend energy on a spin and collect gold and symbols. Every spin counts.",
-      "getstarted.step3.title": "Grow cards, stack LP",
-      "getstarted.step3.desc": "Upgrade treasure cards and LP piles up on its own. Don't forget to compete with other players either.",
-      "getstarted.cta.primary": "Play Now",
-      "getstarted.cta.secondary": "Full Play Guide",
-
       // ── index: LP section ──
       "lp.kicker": "LP — Grow with Us",
       "lp.h2": "<span class=\"gold-text\">LP</span> — What you earn<br>doesn't disappear.",
@@ -378,19 +365,6 @@
       "gameloop.anchor.h3": "심볼이 모이면,<br>카드가 터진다.",
       "gameloop.anchor.p1": "슬롯에서 나온 특정 심볼을 모으면 <span class=\"text-yellow-400 font-semibold\">카드 퀘스트</span>가 완료됩니다. 퀘스트를 완성할 때마다 보너스 골드가 터져 나와 당신의 지갑으로 쏟아집니다.",
       "gameloop.anchor.p2": "모든 스핀이 퀘스트를 움직이고, 그 골드로 다시 트레저 카드를 키워 <span class=\"text-yellow-400 font-semibold\">LP</span>로 이어집니다.",
-
-      // ── index: Get Started ──
-      "getstarted.kicker": "Get Started",
-      "getstarted.h2": "3단계로 시작하기",
-      "getstarted.cat_bubble": "하암… 시작해볼래? 🐾",
-      "getstarted.step1.title": "Telegram에서 열기",
-      "getstarted.step1.desc": "Telegram에서 <span class=\"text-yellow-500 font-semibold\">@LupinSpinBot</span>을 검색하거나 링크를 누르세요.",
-      "getstarted.step2.title": "첫 스핀",
-      "getstarted.step2.desc": "에너지로 슬롯을 돌려 골드와 심볼을 모으세요. 모든 스핀이 기록됩니다.",
-      "getstarted.step3.title": "카드를 키우고 LP를 모으세요",
-      "getstarted.step3.desc": "트레저 카드를 업그레이드하면 LP가 자동으로 쌓입니다. 다른 플레이어와 겨루는 것도 잊지 말고요.",
-      "getstarted.cta.primary": "지금 바로 시작하기",
-      "getstarted.cta.secondary": "전체 플레이 가이드",
 
       // ── index: LP section ──
       "lp.kicker": "LP — Grow with Us",
