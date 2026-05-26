@@ -44,7 +44,7 @@
 
       // ── Meta titles ──
       "meta.title.index": "Lupin Spin — Slot RPG on Telegram",
-      "meta.desc.index": "Spin. Raid. Build. Earn. Start with slots, grow with cards, compete with players. Your LP travels across games and grows with us.",
+      "meta.desc.index": "Spin. Raid. Upgrade. Earn. Start with slots, grow with cards, compete with players. Your LP travels across games and grows with us.",
       "meta.title.features": "Features — Lupin Spin Docs",
       "meta.title.how_to_play": "How to Play — Lupin Spin Docs",
       "meta.title.faq": "FAQ — Lupin Spin Docs",
@@ -55,13 +55,13 @@
       "hero.badge": "🎰 Slot RPG on Telegram — Beta Live",
       "hero.h1.1": "Spin.",
       "hero.h1.2": "Raid.",
-      "hero.h1.3": "Build.",
+      "hero.h1.3": "Upgrade.",
       "hero.h1.4": "Earn.",
       "hero.sub": "Start with slots, grow with cards, compete with players.<br><span class=\"text-yellow-400 font-semibold\">Your LP travels across games and grows with us.</span>",
       "hero.cta.primary": "Play on Telegram",
       "hero.cta.secondary": "How to Play",
       "hero.stat1.title": "Slot RPG",
-      "hero.stat1.sub": "Play &amp; Build",
+      "hero.stat1.sub": "Play &amp; Upgrade",
       "hero.stat2.title": "Cross-Game",
       "hero.stat2.sub": "LP Economy",
       "hero.stat3.title": "Grow with Us",
@@ -78,14 +78,14 @@
       "gameloop.step2.desc": "Earn gold, symbols, cards, and quests.",
       "gameloop.step3.title": "RAID",
       "gameloop.step3.desc": "Attack, defend, and raid other players.",
-      "gameloop.step4.title": "BUILD",
+      "gameloop.step4.title": "Upgrade",
       "gameloop.step4.desc": "Buy and upgrade stage-specific treasure cards.",
       "gameloop.step5.title": "EARN",
       "gameloop.step5.desc": "Every play earns LP.",
       "gameloop.anchor.kicker": "Win · Symbol Quest",
       "gameloop.anchor.h3": "Symbols align.<br>Cards burst.",
       "gameloop.anchor.p1": "Collect specific symbols from the slot to complete <span class=\"text-yellow-400 font-semibold\">card quests</span>. Every finished quest bursts bonus gold into your wallet.",
-      "gameloop.anchor.p2": "Every spin pushes a quest forward. That gold grows your treasure cards, which build your <span class=\"text-yellow-400 font-semibold\">LP</span>.",
+      "gameloop.anchor.p2": "Every spin pushes a quest forward. That gold grows your treasure cards, which Upgrade your <span class=\"text-yellow-400 font-semibold\">LP</span>.",
 
       // ── index: LP section ──
       "lp.kicker": "LP — Grow with Us",
@@ -105,7 +105,7 @@
       // ── index: Roadmap ──
       "roadmap.kicker": "Roadmap",
       "roadmap.h2": "What's Next",
-      "roadmap.sub": "Lupin Spin is just the beginning.<br>DreamDo Games is building multiple games connected by one economy.",
+      "roadmap.sub": "Lupin Spin is just the beginning.<br>DreamDo Games is Upgradeing multiple games connected by one economy.",
       "roadmap.now.badge": "NOW",
       "roadmap.next.badge": "NEXT",
       "roadmap.then.badge": "THEN",
@@ -236,7 +236,7 @@
       "faq.q9": "Can I use LP in other DreamDo Games titles?",
       "faq.a9": "Yes, after Lupin Hub launches. A single LP balance will be usable in DreamDo Games titles launching later — Lupin Casino, Lupin Quest, and more.",
       "faq.q10": "What is DreamDo Games?",
-      "faq.a10": "DreamDo Games is a publisher of games built as Telegram mini-apps. \"Grow together. Play together.\" — we build experiences where players take part in a game's growth and share in it. Lupin Spin is the first title of our first series (Lupin Series).",
+      "faq.a10": "DreamDo Games is a publisher of games built as Telegram mini-apps. \"Grow together. Play together.\" — we Upgrade experiences where players take part in a game's growth and share in it. Lupin Spin is the first title of our first series (Lupin Series).",
       "faq.q11": "When is Lupin Hub launching?",
       "faq.a11": "It's the NEXT step after Lupin Spin Beta. The exact timing will be announced later; updates go out through our Telegram channel.",
       "faq.q12": "What is this site for?",
@@ -323,7 +323,7 @@
 
       // ── Meta titles ──
       "meta.title.index": "Lupin Spin — Telegram Slot RPG",
-      "meta.desc.index": "Spin. Raid. Build. Earn. 슬롯으로 시작해, 카드로 키우고, 플레이어와 겨룬다. 쌓인 LP는 게임을 넘나들고, 우리와 함께 자란다.",
+      "meta.desc.index": "Spin. Raid. Upgrade. Earn. 슬롯으로 시작해, 카드로 업그레이드하고, 다른 플레이어와 경쟁하세요. 쌓인 LP는 게임을 앞으로 더 많은 게임에서 사용할 수 있고, 우리와 함께 성장합니다.",
       "meta.title.features": "기능 — Lupin Spin Docs",
       "meta.title.how_to_play": "플레이 가이드 — Lupin Spin Docs",
       "meta.title.faq": "FAQ — Lupin Spin Docs",
@@ -334,13 +334,13 @@
       "hero.badge": "🎰 Telegram Slot RPG — 베타 진행 중",
       "hero.h1.1": "Spin.",
       "hero.h1.2": "Raid.",
-      "hero.h1.3": "Build.",
+      "hero.h1.3": "Upgrade.",
       "hero.h1.4": "Earn.",
-      "hero.sub": "슬롯으로 시작해 카드를 키우고, 다른 플레이어와 경쟁하세요.<br>쌓아 올린 <span class=\"text-yellow-400 font-semibold\">LP는 게임을 넘나들며 우리와 함께 자랍니다.</span>",
+      "hero.sub": "슬롯으로 시작해 카드를 업그레이드하고, 다른 플레이어와 경쟁하세요.<br>쌓아 올린 <span class=\"text-yellow-400 font-semibold\">LP는 게임을 확장하며 우리와 함께 성장합니다.</span>",
       "hero.cta.primary": "Telegram에서 플레이",
       "hero.cta.secondary": "플레이 가이드",
       "hero.stat1.title": "Slot RPG",
-      "hero.stat1.sub": "Play &amp; Build",
+      "hero.stat1.sub": "Play &amp; Upgrade",
       "hero.stat2.title": "Cross-Game",
       "hero.stat2.sub": "LP Economy",
       "hero.stat3.title": "Grow with Us",
@@ -357,8 +357,8 @@
       "gameloop.step2.desc": "골드, 심볼, 카드, 퀘스트를 얻습니다.",
       "gameloop.step3.title": "RAID",
       "gameloop.step3.desc": "다른 플레이어를 공격하고 방어하거나, 레이드에 참여합니다.",
-      "gameloop.step4.title": "BUILD",
-      "gameloop.step4.desc": "스테이지별 트레저 카드를 사고 업그레이드합니다.",
+      "gameloop.step4.title": "Upgrade",
+      "gameloop.step4.desc": "스테이지별 트레저 카드를 업그레이드합니다.",
       "gameloop.step5.title": "EARN",
       "gameloop.step5.desc": "모든 플레이가 LP로 쌓입니다.",
       "gameloop.anchor.kicker": "Win · Symbol Quest",
@@ -369,13 +369,13 @@
       // ── index: LP section ──
       "lp.kicker": "LP — Grow with Us",
       "lp.h2": "<span class=\"gold-text\">LP</span> — 당신이 쌓은 것은<br>사라지지 않는다",
-      "lp.sub": "LP는 단순한 게임 포인트가 아닙니다.<br>DreamDo Games 생태계와 함께 자라는 당신의 몫입니다.",
+      "lp.sub": "LP는 단순한 게임 포인트가 아닙니다.<br>DreamDo Games 생태계와 함께 성장하는 당신의 몫입니다.",
       "lp.anchor.kicker": "The LP Moment",
-      "lp.anchor.caption": "모든 스핀, 모든 카드, 모든 레이드 — 그 끝에서 LP가 터져 나옵니다.",
+      "lp.anchor.caption": "모든 스핀, 모든 카드, 모든 레이드 — 그 끝에서 LP가 쌓여 갑니다.",
       "lp.card1.title": "Earn in Play",
-      "lp.card1.desc": "슬롯, 레이드, 카드 — 모든 플레이가 LP로 쌓입니다.",
+      "lp.card1.desc": "스핀, 레이드, 카드 업그레이드 — 모든 플레이가 LP로 쌓입니다.",
       "lp.card2.title": "Use Anywhere",
-      "lp.card2.desc": "Lupin Hub를 통해 DreamDo Games의 다른 게임에서도 쓸 수 있습니다.",
+      "lp.card2.desc": "Lupin Hub에서 DreamDo Games의 모든 게임에서 LP를 쓸 수 있습니다.",
       "lp.card3.title": "Grow with Us",
       "lp.card3.desc": "특정 시점에 티켓과 리워드로 교환할 수 있고, 우리가 커질수록 당신의 LP 가치도 함께 커집니다.",
       "lp.quote": "\"LP is how we stay in this together.\"",
@@ -618,7 +618,7 @@
 
   function applyLang(lang) {
     if (!SUPPORTED.includes(lang)) lang = DEFAULT_LANG;
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { }
     document.documentElement.lang = lang;
 
     // Translate text content
@@ -670,7 +670,7 @@
     try {
       const v = localStorage.getItem(STORAGE_KEY);
       if (v && SUPPORTED.includes(v)) saved = v;
-    } catch (e) {}
+    } catch (e) { }
     initSwitcherBindings();
     applyLang(saved);
   }
